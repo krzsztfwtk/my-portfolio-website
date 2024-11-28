@@ -10,6 +10,7 @@ const Header = () => {
   return (
     <div
       style={{
+        fontSize: "1.8rem",
         position: "fixed",
         display: "flex",
         justifyContent: "center",
