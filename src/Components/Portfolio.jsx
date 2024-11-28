@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/cool_class_diagram_mask.webp";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Class diagram of software to process image batches using large language model";
 
 /**
  * Project list
@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Reports of physics experiments",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Sample reports of physics experiments, performed in physics laboratories in the engineering studies of Computer Science.",
+    url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Reports of digital circuit theory exercises",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Sample reports of digital circuit theory laboratory exercises in the engineering studies of Computer Science.",
+    url: "https://github.com/krzsztfwtk/polsl-sprawozdania-tuc",
   },
   {
-    title: "My Resume Site",
+    title: "NLP Toolkit",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Tools for text summarization and semantic search. Lightweight C++ code.",
+    url: "https://github.com/krzsztfwtk/text-compactor-cpp",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Valet Parking System Simulation",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "I was one of the main contributors in international project to develop smart valet parking system that utilizes optimal space. Our solution opens many doors for us in the field of parking.",
+    url: "https://github.com/Myrtasz10/valet-parking-system-pbl",
   },
 ];
 
