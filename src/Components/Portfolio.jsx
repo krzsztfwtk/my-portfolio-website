@@ -54,6 +54,24 @@ const projectList = [
       "I was one of the main contributors in international project to develop smart valet parking system that utilizes optimal space. Our solution opens many doors for us in the field of parking.",
     url: "https://github.com/Myrtasz10/valet-parking-system-pbl",
   },
+  {
+    title: "TSP using OpenRouteService API",
+    description:
+      "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances with the OpenRouteService API",
+    url: "https://github.com/krzsztfwtk/tsp-openrouteservice",
+  },
+  {
+    title: "Vigenere Breaker",
+    description:
+      "Vigenère Cipher command-line tool for file encryption/decryption and breaker with frequency analysis",
+    url: "https://github.com/krzsztfwtk/vigenere",
+  },
+  {
+    title: "Is today a trading Sunday?",
+    description:
+      "Proof of concept daily updated GitHub repo to tell you if today in Poland is a trading Sunday.",
+    url: "https://github.com/krzsztfwtk/niedziela-handlowa",
+  },
 ];
 
 const Portfolio = () => {

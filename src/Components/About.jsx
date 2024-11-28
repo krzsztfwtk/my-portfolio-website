@@ -38,6 +38,7 @@ const skillsList = [
   "Software Engineering",
   "Relational databases",
   "Natural Language Processing",
+  "Physics Fundamentals",
 ];
 
 /**
