@@ -32,20 +32,21 @@ const imageAltText =
  */
 const projectList = [
   {
-    title: "Reports of physics experiments",
-    description:
-      "Sample reports of physics experiments, performed in physics laboratories in the engineering studies of Computer Science.",
-    url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka",
-  },
-  {
     title: "Reports of digital circuit theory exercises",
     description:
       "Sample reports of digital circuit theory laboratory exercises in the engineering studies of Computer Science.",
     url: "https://github.com/krzsztfwtk/polsl-sprawozdania-tuc",
   },
   {
+    title: "Reports of physics experiments",
+    description:
+      "Sample reports of physics experiments, performed in physics laboratories in the engineering studies of Computer Science.",
+    url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka",
+  },
+  {
     title: "NLP Toolkit",
-    description: "Tools for text summarization and semantic search. Lightweight C++ code.",
+    description:
+      "Tools for text summarization and semantic search. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25. These tailored algorithms process massive datasets in real-time using basic mathematics.",
     url: "https://github.com/krzsztfwtk/text-compactor-cpp",
   },
   {
@@ -65,12 +66,6 @@ const projectList = [
     description:
       "Vigenère Cipher command-line tool for file encryption/decryption and breaker with frequency analysis",
     url: "https://github.com/krzsztfwtk/vigenere",
-  },
-  {
-    title: "Is today a trading Sunday?",
-    description:
-      "Proof of concept daily updated GitHub repo to tell you if today in Poland is a trading Sunday.",
-    url: "https://github.com/krzsztfwtk/niedziela-handlowa",
   },
 ];
 

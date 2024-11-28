@@ -25,7 +25,7 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Krzysztof Witek",
-  title: "Computer Science Student & E-Commerce Developer",
+  title: "Computer Science Student & Ecommerce Developer",
   email: "",
   gitHub: "krzsztfwtk",
   instagram: "",
