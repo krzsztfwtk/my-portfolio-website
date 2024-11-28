@@ -21,7 +21,8 @@ import React from "react";
  */
 import image from "../images/cool_class_diagram_mask.webp";
 
-const imageAltText = "Class diagram of software to process image batches using large language model";
+const imageAltText =
+  "Class diagram of software to process image batches using large language model";
 
 /**
  * Project list
@@ -44,8 +45,7 @@ const projectList = [
   },
   {
     title: "NLP Toolkit",
-    description:
-      "Tools for text summarization and semantic search. Lightweight C++ code.",
+    description: "Tools for text summarization and semantic search. Lightweight C++ code.",
     url: "https://github.com/krzsztfwtk/text-compactor-cpp",
   },
   {
