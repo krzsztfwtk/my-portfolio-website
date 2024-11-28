@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "krzsztfwtk portfolio website",
   "source": "src/index.html",
-  "homepage": "https://krzsztfwtk.krzsztf.com",
+  "homepage": "https://krzsztfwtk.github.io/my-portfolio-website",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
