@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
   overflow-x: hidden;
 }
 
@@ -45,17 +45,17 @@ section img.background {
 
 h1 {
   margin: 0;
-  font-family: Cormorant Garamond, serif;
+  font-family: Open Sans, sans-serif;
   font-size: 7rem;
-  font-weight: 400;
+  font-weight: 800;
   line-height: .8;
 }
 
 h2 {
   margin: 0;
   padding-top: 1rem;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 h3 {
