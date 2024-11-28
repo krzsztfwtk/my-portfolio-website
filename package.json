@@ -1,24 +1,24 @@
 {
-  "name": "educator-js-codespace-template",
-  "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "name": "krzsztfwtk-portfolio-website",
+  "version": "2.0.0",
+  "description": "krzsztfwtk portfolio website",
   "source": "src/index.html",
   "homepage": "https://krzsztfwtk.krzsztf.com",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://krzsztfwtk.krzsztf.com'",
+    "build-gh": "parcel build --public-url '/'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/krzsztfwtk/my-portfolio-website.git"
   },
-  "author": "Microsoft",
+  "author": "krzsztfwtk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/krzsztfwtk/my-portfolio-website/issues"
   },
   "dependencies": {
     "react": "^18.2.0",
