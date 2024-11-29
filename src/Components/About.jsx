@@ -4,7 +4,7 @@
  * Space for you to describe more about yourself.
  */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 /**
  * About background image
@@ -31,13 +31,13 @@ const description =
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Algorithm Optimization",
-  "Cybersecurity",
+  "C++ & Python",
+  "MySQL",
   "Linux & Windows",
-  "Data Structures",
-  "Software Engineering",
-  "Relational databases",
-  "Natural Language Processing",
+  "Network Administration",
+  "Cybersecurity Fundamentals",
+  "Server Management",
+  "E-commerce Operations",
   "Physics Fundamentals",
 ];
 
@@ -49,14 +49,28 @@ const skillsList = [
 const detailOrQuote = "'You don't pay for what you don't use.' - Zero-Overhead Principle";
 
 const About = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  // Handle window resize to update state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
           backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
+          width: isMobile ? "90%" : "50%",
+          padding: isMobile ? "2rem" : "4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
@@ -67,8 +81,8 @@ const About = () => {
         <ul
           style={{
             textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
+            columns: isMobile ? 1 : 2,
+            fontSize: isMobile ? "1rem" : "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
           }}
@@ -78,7 +92,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: isMobile ? "1rem 1rem 0" : "1rem 3rem 0" }}>{detailOrQuote}</p>
       </div>
     </section>
   );

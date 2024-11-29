@@ -8,7 +8,7 @@
  * as you continue to learn and create.
  */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 /**
  * Desk image
@@ -70,20 +70,68 @@ const projectList = [
 ];
 
 const Portfolio = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  // Handle window resize to update state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          paddingTop: "3rem",
+          alignItems: isMobile ? "center" : "flex-start",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: isMobile ? "90%" : "40%",
+            alignSelf: "center",
+            marginBottom: isMobile ? "2rem" : "0",
+          }}
+        >
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: isMobile ? "auto" : "90%",
+              width: "100%",
+              objectFit: "cover",
+            }}
             alt={imageAltText}
           />
         </div>
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            display: "grid",
+            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+            gap: "1rem",
+            width: isMobile ? "90%" : "auto",
+          }}
+        >
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
+            <div
+              className="box"
+              key={project.title}
+              style={{
+                padding: "1rem",
+                border: "1px solid #ccc",
+                borderRadius: "8px",
+                textAlign: "center",
+              }}
+            >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>

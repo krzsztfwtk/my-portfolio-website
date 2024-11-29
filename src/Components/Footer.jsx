@@ -113,7 +113,10 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p
+        className="small"
+        style={{ marginTop: 0, color: "white", textAlign: "center", padding: "0rem 1rem" }}
+      >
         Created by {name}. This website does not use cookies :)
       </p>
     </div>
