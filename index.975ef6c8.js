@@ -27211,20 +27211,20 @@ const imageAltText = "Universal join on 3D model is a little too big :)";
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */ const skillsList = [
-    "\uD83D\uDD27 C++ ⚙️ Python",
-    "\uD83D\uDDC4️ MySQL",
-    "\uD83D\uDC27 Linux \uD83E\uDE9F Windows",
-    "\uD83C\uDF10 Network Administration",
-    "\uD83D\uDD12 Cybersecurity Fundamentals",
-    "\uD83D\uDDA5️ Server Management",
-    "\uD83D\uDED2 E-commerce Operations",
-    "\uD83D\uDCD8 Physics Fundamentals", 
+    "⚙️Algorithms \uD83D\uDD27Software Engineering",
+    "\uD83D\uDDC4️Relational Databases",
+    "\uD83D\uDC27Linux \uD83E\uDE9FWindows",
+    "\uD83C\uDF10Network Administration",
+    "\uD83D\uDD12Cybersecurity Fundamentals",
+    "\uD83D\uDDA5️Server Management",
+    "\uD83D\uDED2E-commerce Operations",
+    "\uD83D\uDCD8Physics Fundamentals", 
 ];
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
- */ const detailOrQuote = "“You don't pay for what you don't use.” - Zero-Overhead Principle";
+ */ const detailOrQuote = "“You don't pay for what you don't use.” - zero-overhead principle";
 const About = ()=>{
     _s();
     const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth <= 768);
