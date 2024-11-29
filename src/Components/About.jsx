@@ -24,21 +24,21 @@ const imageAltText = "Universal join on 3D model is a little too big :)";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a Computer Science student studying at Silesian University of Technology. I enjoy creating unique solutions for standard problems and standard solutions for unique problems.";
+  "I'm a Computer Science student studying at Silesian University of Technology🎓. I enjoy creating unique solutions💡 for standard problems and standard solutions🛠️ for unique problems.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "C++ & Python",
-  "MySQL",
-  "Linux & Windows",
-  "Network Administration",
-  "Cybersecurity Fundamentals",
-  "Server Management",
-  "E-commerce Operations",
-  "Physics Fundamentals",
+  "🔧 C++ ⚙️ Python",
+  "🗄️ MySQL",
+  "🐧 Linux 🪟 Windows",
+  "🌐 Network Administration",
+  "🔒 Cybersecurity Fundamentals",
+  "🖥️ Server Management",
+  "🛒 E-commerce Operations",
+  "📘 Physics Fundamentals",
 ];
 
 /**
@@ -46,7 +46,7 @@ const skillsList = [
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
  */
-const detailOrQuote = "'You don't pay for what you don't use.' - Zero-Overhead Principle";
+const detailOrQuote = "“You don't pay for what you don't use.” - Zero-Overhead Principle";
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -88,7 +88,7 @@ const About = () => {
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <p key={skill}>{skill}</p>
           ))}
         </ul>
         <hr />

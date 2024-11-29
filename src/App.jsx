@@ -24,7 +24,7 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Krzysztof Witek",
+  name: "krzsztfwtk",
   title: "Computer Science Student & Ecommerce Developer",
   email: "",
   gitHub: "krzsztfwtk",
@@ -35,14 +35,14 @@ const siteProps = {
   youTube: "",
 };
 
-const primaryColor = "#4E567E";
+const primaryColor = "#003366";
 const secondaryColor = "#D2F1E4";
 
 const App = () => {
   return (
     <div id="main">
       <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
+      <Home name={"Krzysztof Witek"} title={siteProps.title} />
       <About />
       <Portfolio />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />

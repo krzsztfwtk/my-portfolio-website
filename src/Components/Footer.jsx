@@ -47,7 +47,7 @@ const Footer = (props) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "2.5rem",
+        gap: "2rem",
         padding: "5rem 0 3rem",
         backgroundColor: primaryColor,
         width: "100vw",
