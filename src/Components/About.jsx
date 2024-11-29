@@ -31,14 +31,14 @@ const description =
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "🔧 C++ ⚙️ Python",
-  "🗄️ MySQL",
-  "🐧 Linux 🪟 Windows",
-  "🌐 Network Administration",
-  "🔒 Cybersecurity Fundamentals",
-  "🖥️ Server Management",
-  "🛒 E-commerce Operations",
-  "📘 Physics Fundamentals",
+  "⚙️Algorithms 🔧Software Engineering",
+  "🗄️Relational Databases",
+  "🐧Linux 🪟Windows",
+  "🌐Network Administration",
+  "🔒Cybersecurity Fundamentals",
+  "🖥️Server Management",
+  "🛒E-commerce Operations",
+  "📘Physics Fundamentals",
 ];
 
 /**
@@ -46,7 +46,7 @@ const skillsList = [
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
  */
-const detailOrQuote = "“You don't pay for what you don't use.” - Zero-Overhead Principle";
+const detailOrQuote = "“You don't pay for what you don't use.” - zero-overhead principle";
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
