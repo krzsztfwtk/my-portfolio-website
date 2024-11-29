@@ -20,7 +20,7 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/poster_cut_mask.webp";
+import image from "../images/poster_cut_mask_blured.webp";
 
 const imageAltText = "Poster presented on conference on emerging trends in AI.";
 
