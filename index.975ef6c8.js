@@ -2902,7 +2902,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 /**
- * Entry point of application, where App is rendered within the div with the id of "app" 
+ * Entry point of application, where App is rendered within the div with the id of "app"
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
@@ -27111,7 +27111,7 @@ var _stylesCss = require("./styles.css");
  * If you don't have one of the social sites listed, leave it as an empty string.
  */ const siteProps = {
     name: "Krzysztof Witek",
-    title: "Computer Science Student & E-Commerce Developer",
+    title: "Computer Science Student & Ecommerce Developer",
     email: "",
     gitHub: "krzsztfwtk",
     instagram: "",
@@ -27202,6 +27202,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  * freely use on your site.
  */ var _cool3DStuffMaskWebp = require("../images/cool_3d_stuff_mask.webp");
 var _cool3DStuffMaskWebpDefault = parcelHelpers.interopDefault(_cool3DStuffMaskWebp);
+var _s = $RefreshSig$();
 const imageAltText = "Universal join on 3D model is a little too big :)";
 /**
  * Sort description that expands on your title on the Home component.
@@ -27210,13 +27211,13 @@ const imageAltText = "Universal join on 3D model is a little too big :)";
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */ const skillsList = [
-    "Algorithm Optimization",
-    "Cybersecurity",
+    "C++ & Python",
+    "MySQL",
     "Linux & Windows",
-    "Data Structures",
-    "Software Engineering",
-    "Relational databases",
-    "Natural Language Processing",
+    "Network Administration",
+    "Cybersecurity Fundamentals",
+    "Server Management",
+    "E-commerce Operations",
     "Physics Fundamentals", 
 ];
 /**
@@ -27225,6 +27226,18 @@ const imageAltText = "Universal join on 3D model is a little too big :)";
  * about you on a professional level.
  */ const detailOrQuote = "'You don't pay for what you don't use.' - Zero-Overhead Principle";
 const About = ()=>{
+    _s();
+    const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth <= 768);
+    // Handle window resize to update state
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth <= 768);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
         id: "about",
@@ -27235,14 +27248,14 @@ const About = ()=>{
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 54,
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     backgroundColor: "white",
-                    width: "50%",
-                    padding: "4rem",
+                    width: isMobile ? "90%" : "50%",
+                    padding: isMobile ? "2rem" : "4rem",
                     margin: "3rem auto",
                     textAlign: "center"
                 },
@@ -27251,7 +27264,7 @@ const About = ()=>{
                         children: "About Myself"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 64,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27259,32 +27272,7 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 65,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 66,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        style: {
-                            textAlign: "left",
-                            columns: 2,
-                            fontSize: "1.25rem",
-                            margin: "2rem 3rem",
-                            gap: "3rem"
-                        },
-                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: skill
-                            }, skill, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 77,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 67,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
@@ -27292,29 +27280,55 @@ const About = ()=>{
                         lineNumber: 80,
                         columnNumber: 9
                     }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        style: {
+                            textAlign: "left",
+                            columns: isMobile ? 1 : 2,
+                            fontSize: isMobile ? "1rem" : "1.25rem",
+                            margin: "2rem 3rem",
+                            gap: "3rem"
+                        },
+                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: skill
+                            }, skill, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 91,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 81,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 94,
+                        columnNumber: 9
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
-                            padding: "1rem 3rem 0"
+                            padding: isMobile ? "1rem 1rem 0" : "1rem 3rem 0"
                         },
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 81,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 55,
+                lineNumber: 69,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 53,
+        lineNumber: 67,
         columnNumber: 5
     }, undefined);
 };
+_s(About, "IPgBv7VuYiSHCPyFLng5ZxH+1OA=");
 _c = About;
 exports.default = About;
 var _c;
@@ -27325,7 +27339,44 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/cool_3d_stuff_mask.webp":"fFP4i"}],"gkKU3":[function(require,module,exports) {
+},{"react":"21dqq","../images/cool_3d_stuff_mask.webp":"fFP4i","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"fFP4i":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "cool_3d_stuff_mask.a75ac54d.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27475,44 +27526,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"fFP4i":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "cool_3d_stuff_mask.a75ac54d.webp" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"7GWgX":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27728,11 +27742,14 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 className: "small",
                 style: {
                     marginTop: 0,
-                    color: "white"
+                    color: "white",
+                    textAlign: "center",
+                    padding: "0rem 1rem"
                 },
                 children: [
                     "Created by ",
-                    name
+                    name,
+                    ". This website does not use cookies :)"
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
@@ -28556,6 +28573,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
+            fontSize: "1.2rem",
             position: "fixed",
             display: "flex",
             justifyContent: "center",
@@ -28572,7 +28590,7 @@ const Header = ()=>{
                 children: "Home"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28580,7 +28598,7 @@ const Header = ()=>{
                 children: "About"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28588,7 +28606,7 @@ const Header = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28596,7 +28614,7 @@ const Header = ()=>{
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 27,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28740,7 +28758,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/down-arrow.svg":"b5nCi","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/poster_cut_mask.webp":"ijPOO"}],"b5nCi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/down-arrow.svg":"b5nCi","prop-types":"7wKI2","../images/poster_cut_mask.webp":"ijPOO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5nCi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "down-arrow.1037091f.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"ijPOO":[function(require,module,exports) {
@@ -28776,6 +28794,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  * freely use on your site.
  */ var _coolClassDiagramMaskWebp = require("../images/cool_class_diagram_mask.webp");
 var _coolClassDiagramMaskWebpDefault = parcelHelpers.interopDefault(_coolClassDiagramMaskWebp);
+var _s = $RefreshSig$();
 const imageAltText = "Class diagram of software to process image batches using large language model";
 /**
  * Project list
@@ -28784,18 +28803,18 @@ const imageAltText = "Class diagram of software to process image batches using l
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */ const projectList = [
     {
-        title: "Reports of physics experiments",
-        description: "Sample reports of physics experiments, performed in physics laboratories in the engineering studies of Computer Science.",
-        url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka"
-    },
-    {
         title: "Reports of digital circuit theory exercises",
         description: "Sample reports of digital circuit theory laboratory exercises in the engineering studies of Computer Science.",
         url: "https://github.com/krzsztfwtk/polsl-sprawozdania-tuc"
     },
     {
+        title: "Reports of physics experiments",
+        description: "Sample reports of physics experiments, performed in physics laboratories in the engineering studies of Computer Science.",
+        url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka"
+    },
+    {
         title: "NLP Toolkit",
-        description: "Tools for text summarization and semantic search. Lightweight C++ code.",
+        description: "Tools for text summarization and semantic search. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25. These tailored algorithms process massive datasets in real-time using basic mathematics.",
         url: "https://github.com/krzsztfwtk/text-compactor-cpp"
     },
     {
@@ -28812,14 +28831,21 @@ const imageAltText = "Class diagram of software to process image batches using l
         title: "Vigenere Breaker",
         description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker with frequency analysis",
         url: "https://github.com/krzsztfwtk/vigenere"
-    },
-    {
-        title: "Is today a trading Sunday?",
-        description: "Proof of concept daily updated GitHub repo to tell you if today in Poland is a trading Sunday.",
-        url: "https://github.com/krzsztfwtk/niedziela-handlowa"
     }, 
 ];
 const Portfolio = ()=>{
+    _s();
+    const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth <= 768);
+    // Handle window resize to update state
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth <= 768);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
         id: "portfolio",
@@ -28831,43 +28857,57 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 80,
+                lineNumber: 89,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     display: "flex",
-                    flexDirection: "row",
-                    paddingTop: "3rem"
+                    flexDirection: isMobile ? "column" : "row",
+                    paddingTop: "3rem",
+                    alignItems: isMobile ? "center" : "flex-start"
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         style: {
-                            maxWidth: "40%",
-                            alignSelf: "center"
+                            maxWidth: isMobile ? "90%" : "40%",
+                            alignSelf: "center",
+                            marginBottom: isMobile ? "2rem" : "0"
                         },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _coolClassDiagramMaskWebpDefault.default),
                             style: {
-                                height: "90%",
+                                height: isMobile ? "auto" : "90%",
                                 width: "100%",
                                 objectFit: "cover"
                             },
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 83,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 82,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container",
+                        style: {
+                            display: "grid",
+                            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                            gap: "1rem",
+                            width: isMobile ? "90%" : "auto"
+                        },
                         children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "box",
+                                style: {
+                                    padding: "1rem",
+                                    border: "1px solid #ccc",
+                                    borderRadius: "8px",
+                                    textAlign: "center"
+                                },
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                         href: project.url,
@@ -28880,12 +28920,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 93,
+                                            lineNumber: 136,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 92,
+                                        lineNumber: 135,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28893,33 +28933,34 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 95,
+                                        lineNumber: 138,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 91,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 89,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 81,
+                lineNumber: 90,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 79,
+        lineNumber: 88,
         columnNumber: 5
     }, undefined);
 };
+_s(Portfolio, "IPgBv7VuYiSHCPyFLng5ZxH+1OA=");
 _c = Portfolio;
 exports.default = Portfolio;
 var _c;
@@ -28930,7 +28971,7 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/cool_class_diagram_mask.webp":"iPevM"}],"iPevM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/cool_class_diagram_mask.webp":"iPevM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iPevM":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "cool_class_diagram_mask.7d797e58.webp" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequiref8d6")

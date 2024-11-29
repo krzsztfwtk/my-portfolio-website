@@ -1,8 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap";
-html {
-  scroll-behavior: smooth;
-}
-
 html, body {
   height: 100%;
   width: 100%;
@@ -46,7 +42,7 @@ section img.background {
 h1 {
   margin: 0;
   font-family: Open Sans, sans-serif;
-  font-size: 7rem;
+  font-size: 4.5rem;
   font-weight: 600;
   line-height: .8;
 }
