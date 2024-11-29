@@ -27110,7 +27110,7 @@ var _stylesCss = require("./styles.css");
  *
  * If you don't have one of the social sites listed, leave it as an empty string.
  */ const siteProps = {
-    name: "Krzysztof Witek",
+    name: "krzsztfwtk",
     title: "Computer Science Student & Ecommerce Developer",
     email: "",
     gitHub: "krzsztfwtk",
@@ -27120,7 +27120,7 @@ var _stylesCss = require("./styles.css");
     twitter: "",
     youTube: ""
 };
-const primaryColor = "#4E567E";
+const primaryColor = "#003366";
 const secondaryColor = "#D2F1E4";
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27132,7 +27132,7 @@ const App = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
-                name: siteProps.name,
+                name: "Krzysztof Witek",
                 title: siteProps.title
             }, void 0, false, {
                 fileName: "src/App.jsx",
@@ -27206,25 +27206,25 @@ var _s = $RefreshSig$();
 const imageAltText = "Universal join on 3D model is a little too big :)";
 /**
  * Sort description that expands on your title on the Home component.
- */ const description = "I'm a Computer Science student studying at Silesian University of Technology. I enjoy creating unique solutions for standard problems and standard solutions for unique problems.";
+ */ const description = "I'm a Computer Science student studying at Silesian University of Technology\uD83C\uDF93. I enjoy creating unique solutions\uD83D\uDCA1 for standard problems and standard solutions\uD83D\uDEE0️ for unique problems.";
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */ const skillsList = [
-    "C++ & Python",
-    "MySQL",
-    "Linux & Windows",
-    "Network Administration",
-    "Cybersecurity Fundamentals",
-    "Server Management",
-    "E-commerce Operations",
-    "Physics Fundamentals", 
+    "\uD83D\uDD27 C++ ⚙️ Python",
+    "\uD83D\uDDC4️ MySQL",
+    "\uD83D\uDC27 Linux \uD83E\uDE9F Windows",
+    "\uD83C\uDF10 Network Administration",
+    "\uD83D\uDD12 Cybersecurity Fundamentals",
+    "\uD83D\uDDA5️ Server Management",
+    "\uD83D\uDED2 E-commerce Operations",
+    "\uD83D\uDCD8 Physics Fundamentals", 
 ];
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
- */ const detailOrQuote = "'You don't pay for what you don't use.' - Zero-Overhead Principle";
+ */ const detailOrQuote = "“You don't pay for what you don't use.” - Zero-Overhead Principle";
 const About = ()=>{
     _s();
     const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth <= 768);
@@ -27288,7 +27288,7 @@ const About = ()=>{
                             margin: "2rem 3rem",
                             gap: "3rem"
                         },
-                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
@@ -27577,7 +27577,7 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "2.5rem",
+            gap: "2rem",
             padding: "5rem 0 3rem",
             backgroundColor: primaryColor,
             width: "100vw"
@@ -28603,7 +28603,7 @@ const Header = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#portfolio",
-                children: "Portfolio"
+                children: "Projects"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 27,
@@ -28687,7 +28687,7 @@ const Home = ({ name , title  })=>{
                     position: "absolute",
                     top: "5rem",
                     left: "2rem",
-                    width: "17rem"
+                    width: "20rem"
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -28804,32 +28804,32 @@ const imageAltText = "Class diagram of software to process image batches using l
  */ const projectList = [
     {
         title: "Reports of digital circuit theory exercises",
-        description: "Sample reports of digital circuit theory laboratory exercises in the engineering studies of Computer Science.",
+        description: "Sample reports\uD83D\uDCDC of digital circuit theory\uD83D\uDD22 laboratory exercises in the engineering studies of Computer Science.",
         url: "https://github.com/krzsztfwtk/polsl-sprawozdania-tuc"
     },
     {
         title: "Reports of physics experiments",
-        description: "Sample reports of physics experiments, performed in physics laboratories in the engineering studies of Computer Science.",
+        description: "Sample reports\uD83D\uDCDC of physics experiments\uD83D\uDD2C, performed in physics laboratories in the engineering studies of Computer Science.",
         url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka"
     },
     {
         title: "NLP Toolkit",
-        description: "Tools for text summarization and semantic search. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25. These tailored algorithms process massive datasets in real-time using basic mathematics.",
+        description: "Tools for text summarization and semantic search\uD83D\uDD0D. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25\uD83D\uDCAC. These tailored algorithms process massive datasets in real-time using basic mathematics.",
         url: "https://github.com/krzsztfwtk/text-compactor-cpp"
     },
     {
         title: "Valet Parking System Simulation",
-        description: "I was one of the main contributors in international project to develop smart valet parking system that utilizes optimal space. Our solution opens many doors for us in the field of parking.",
+        description: "I was one of the main contributors in international project to develop smart valet parking\uD83D\uDE97 system that utilizes optimal space\uD83D\uDCE6.",
         url: "https://github.com/Myrtasz10/valet-parking-system-pbl"
     },
     {
         title: "TSP using OpenRouteService API",
-        description: "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances with the OpenRouteService API",
+        description: "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances\uD83D\uDDFA️ with the OpenRouteService API",
         url: "https://github.com/krzsztfwtk/tsp-openrouteservice"
     },
     {
         title: "Vigenere Breaker",
-        description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker with frequency analysis",
+        description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker\uD83D\uDD10 with frequency\uD83D\uDCCA analysis",
         url: "https://github.com/krzsztfwtk/vigenere"
     }, 
 ];
@@ -28854,7 +28854,7 @@ const Portfolio = ()=>{
                 style: {
                     textAlign: "center"
                 },
-                children: "Portfolio"
+                children: "Projects"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
                 lineNumber: 89,

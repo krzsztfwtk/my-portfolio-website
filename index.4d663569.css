@@ -40,6 +40,7 @@ section img.background {
 }
 
 h1 {
+  text-shadow: 1px 1px 10px #00000026;
   margin: 0;
   font-family: Open Sans, sans-serif;
   font-size: 4.5rem;
@@ -48,6 +49,7 @@ h1 {
 }
 
 h2 {
+  text-shadow: 1px 1px 10px #0003;
   margin: 0;
   padding-top: 1rem;
   font-size: 2.5rem;
