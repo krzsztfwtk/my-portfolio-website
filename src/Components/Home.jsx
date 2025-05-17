@@ -6,7 +6,7 @@
  */
 
 import React from "react";
-import arrowSvg from "../images/down-arrow.svg";
+import arrowSvg from "url:../images/down-arrow.svg";
 import PropTypes from "prop-types";
 
 /**
@@ -20,7 +20,8 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/poster_cut_mask_blured.webp";
+import image from "url:../images/poster_cut_mask_blured.webp";
+console.log(image);
 
 const imageAltText = "Poster presented on conference on emerging trends in AI.";
 

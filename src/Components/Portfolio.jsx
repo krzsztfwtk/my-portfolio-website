@@ -19,7 +19,7 @@ import React, { useState, useEffect } from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/cool_class_diagram_mask.webp";
+import image from "url:../images/cool_class_diagram_mask.webp";
 
 const imageAltText =
   "Class diagram of software to process image batches using large language model";
