@@ -16140,10 +16140,10 @@ var _stylesCss = require("./styles.css");
     linkedIn: "k-witek",
     medium: "",
     twitter: "",
-    youTube: ""
+    youTube: "",
+    kaggle: "krzsztfwtk"
 };
 const primaryColor = "#003366";
-const secondaryColor = "#D2F1E4";
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "main",
@@ -16173,8 +16173,7 @@ const App = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
                 ...siteProps,
-                primaryColor: primaryColor,
-                secondaryColor: secondaryColor
+                primaryColor: primaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
                 lineNumber: 48,
@@ -16223,8 +16222,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  *
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
- */ var _cool3DStuffMaskWebp = require("url:../images/cool_3d_stuff_mask.webp");
-var _cool3DStuffMaskWebpDefault = parcelHelpers.interopDefault(_cool3DStuffMaskWebp);
+ */ var _plotBlackBackgroundWebp = require("url:../images/plot_black_background.webp");
+var _plotBlackBackgroundWebpDefault = parcelHelpers.interopDefault(_plotBlackBackgroundWebp);
 var _s = $RefreshSig$();
 const imageAltText = "Universal join on 3D model is a little too big :)";
 /**
@@ -16267,7 +16266,7 @@ const About = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
-                src: (0, _cool3DStuffMaskWebpDefault.default),
+                src: (0, _plotBlackBackgroundWebpDefault.default),
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
@@ -16362,7 +16361,7 @@ $RefreshReg$(_c, "About");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/cool_3d_stuff_mask.webp":"ayfmy"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/plot_black_background.webp":"fEqDv"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18670,8 +18669,8 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ayfmy":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("cool_3d_stuff_mask.c2cb4af4.webp") + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fEqDv":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("plot_black_background.3bce921d.webp") + "?" + Date.now();
 
 },{}],"6CuBd":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$a833 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -18712,13 +18711,15 @@ var _twitterSvg = require("url:../images/socials/twitter.svg");
 var _twitterSvgDefault = parcelHelpers.interopDefault(_twitterSvg);
 var _youtubeSvg = require("url:../images/socials/youtube.svg");
 var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
+var _kaggleSvg = require("url:../images/socials/kaggle.svg");
+var _kaggleSvgDefault = parcelHelpers.interopDefault(_kaggleSvg);
 /**
  * 💡 Learning resources
  *
  *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
  *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
  */ const Footer = (props)=>{
-    const { devDotTo, email, gitHub, instagram, linkedIn, medium, name, primaryColor, twitter, youTube } = props;
+    const { devDotTo, email, gitHub, instagram, linkedIn, medium, name, primaryColor, twitter, youTube, kaggle } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "footer",
         style: {
@@ -18746,12 +18747,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 65,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, undefined),
                     devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18764,12 +18765,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 70,
+                            lineNumber: 72,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 69,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, undefined),
                     gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18782,12 +18783,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 75,
+                            lineNumber: 77,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 74,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, undefined),
                     instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18800,12 +18801,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 84,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 79,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, undefined),
                     linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18818,12 +18819,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 93,
+                            lineNumber: 95,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 88,
+                        lineNumber: 90,
                         columnNumber: 11
                     }, undefined),
                     medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18836,12 +18837,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 98,
+                            lineNumber: 100,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 97,
+                        lineNumber: 99,
                         columnNumber: 11
                     }, undefined),
                     twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18854,12 +18855,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 103,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 102,
+                        lineNumber: 104,
                         columnNumber: 11
                     }, undefined),
                     youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -18872,18 +18873,36 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 112,
+                            lineNumber: 114,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 107,
+                        lineNumber: 109,
+                        columnNumber: 11
+                    }, undefined),
+                    kaggle && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.kaggle.com/${kaggle}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _kaggleSvgDefault.default),
+                            alt: "Kaggle",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 123,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 118,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 56,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -18901,13 +18920,13 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 116,
+                lineNumber: 127,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Footer.jsx",
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
@@ -18925,7 +18944,8 @@ Footer.propTypes = {
     name: (0, _propTypesDefault.default).string.isRequired,
     primaryColor: (0, _propTypesDefault.default).string,
     twitter: (0, _propTypesDefault.default).string,
-    youTube: (0, _propTypesDefault.default).string
+    youTube: (0, _propTypesDefault.default).string,
+    kaggle: (0, _propTypesDefault.default).string
 };
 exports.default = Footer;
 var _c;
@@ -18936,7 +18956,7 @@ $RefreshReg$(_c, "Footer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","prop-types":"GNqOQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/socials/devdotto.svg":"2L3nD","url:../images/socials/envelope.svg":"93VzG","url:../images/socials/github.svg":"jX1li","url:../images/socials/instagram.svg":"4da6D","url:../images/socials/linkedin.svg":"cklqw","url:../images/socials/medium.svg":"lJVEq","url:../images/socials/twitter.svg":"3ZDcC","url:../images/socials/youtube.svg":"87r95"}],"GNqOQ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","prop-types":"GNqOQ","url:../images/socials/devdotto.svg":"2L3nD","url:../images/socials/envelope.svg":"93VzG","url:../images/socials/github.svg":"jX1li","url:../images/socials/instagram.svg":"4da6D","url:../images/socials/linkedin.svg":"cklqw","url:../images/socials/medium.svg":"lJVEq","url:../images/socials/twitter.svg":"3ZDcC","url:../images/socials/youtube.svg":"87r95","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/socials/kaggle.svg":"l7wpF"}],"GNqOQ":[function(require,module,exports,__globalThis) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -19707,6 +19727,9 @@ module.exports = module.bundle.resolve("twitter.cf420f4a.svg") + "?" + Date.now(
 },{}],"87r95":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("youtube.0f70360b.svg") + "?" + Date.now();
 
+},{}],"l7wpF":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("kaggle.b6b7738c.svg") + "?" + Date.now();
+
 },{}],"dmKJv":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$beb5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$beb5.init();
@@ -19733,7 +19756,7 @@ const Header = ()=>{
             display: "flex",
             justifyContent: "center",
             gap: "2rem",
-            background: "rgba(255,255,255,0.75)",
+            background: "rgba(255,255,255,0.9)",
             padding: "1rem",
             top: 0,
             width: "100%",
@@ -19821,10 +19844,10 @@ var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
  *
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
- */ var _posterCutMaskBluredWebp = require("url:../images/poster_cut_mask_blured.webp");
-var _posterCutMaskBluredWebpDefault = parcelHelpers.interopDefault(_posterCutMaskBluredWebp);
-console.log((0, _posterCutMaskBluredWebpDefault.default));
-const imageAltText = "Poster presented on conference on emerging trends in AI.";
+ */ var _plotWhiteBackgroundWebp = require("url:../images/plot_white_background.webp");
+var _plotWhiteBackgroundWebpDefault = parcelHelpers.interopDefault(_plotWhiteBackgroundWebp);
+console.log((0, _plotWhiteBackgroundWebpDefault.default));
+const imageAltText = "Trace of a point in nested rectangular epicycloids.";
 const Home = ({ name, title })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "home",
@@ -19832,7 +19855,7 @@ const Home = ({ name, title })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
-                src: (0, _posterCutMaskBluredWebpDefault.default),
+                src: (0, _plotWhiteBackgroundWebpDefault.default),
                 alt: ""
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
@@ -19915,11 +19938,11 @@ $RefreshReg$(_c, "Home");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","prop-types":"GNqOQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/poster_cut_mask_blured.webp":"bt2x6","url:../images/down-arrow.svg":"ce6oJ"}],"bt2x6":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("poster_cut_mask_blured.b43049ca.webp") + "?" + Date.now();
-
-},{}],"ce6oJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/down-arrow.svg":"ce6oJ","prop-types":"GNqOQ","url:../images/plot_white_background.webp":"4JJxi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ce6oJ":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("down-arrow.685cdc2e.svg") + "?" + Date.now();
+
+},{}],"4JJxi":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("plot_white_background.813273ab.webp") + "?" + Date.now();
 
 },{}],"28kHR":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e4b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -19942,6 +19965,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
 /**
  * Desk image
  *
@@ -19950,10 +19974,9 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  *
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
- */ var _coolClassDiagramMaskWebp = require("url:../images/cool_class_diagram_mask.webp");
-var _coolClassDiagramMaskWebpDefault = parcelHelpers.interopDefault(_coolClassDiagramMaskWebp);
-var _s = $RefreshSig$();
-const imageAltText = "Class diagram of software to process image batches using large language model";
+ */ // import image from "url:../images/cool_class_diagram_mask.webp";
+// const imageAltText =
+//   "Class diagram of software to process image batches using large language model";
 /**
  * Project list
  *
@@ -19989,6 +20012,26 @@ const imageAltText = "Class diagram of software to process image batches using l
         title: "Vigenere Breaker",
         description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker\uD83D\uDD10 with frequency\uD83D\uDCCA analysis",
         url: "https://github.com/krzsztfwtk/vigenere"
+    },
+    {
+        title: "LoL AI Runes Recommendation",
+        description: "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams\u2694\uFE0F\uD83E\uDDD9\u200D\u2642\uFE0F using neural network\uD83E\uDDE0\u2699\uFE0F",
+        url: "https://github.com/krzsztfwtk/LoL_AI_Runes_Recommendation"
+    },
+    {
+        title: "LoL Grandmaster+ SoloQ matches 25.20 patch",
+        description: "Dataset of League of legends\uD83C\uDFAE Challenger and Grandmaster level ranked matches played on Worlds 2025\uD83C\uDFC6 patch created with Riot Games API",
+        url: "https://www.kaggle.com/datasets/krzsztfwtk/lol-grandmaster-soloq-matches-worlds-2025-patch"
+    },
+    {
+        title: "LaTeX2Formula Web",
+        description: "Web app to convert LaTeX math expressions\uD83E\uDDEE into formula code for SQL, Excel, C++, etc.\u2728",
+        url: "https://github.com/krzsztfwtk/LaTeX2FormulaWeb"
+    },
+    {
+        title: "Propagation Of Error Calculator",
+        description: "Web-based tool that generates the propagation of error\uD83D\uDD2C formula from a user-provided mathematical expression\uD83D\uDCD0",
+        url: "https://github.com/krzsztfwtk/PropagationOfError"
     }
 ];
 const Portfolio = ()=>{
@@ -20015,14 +20058,14 @@ const Portfolio = ()=>{
                 children: "Projects"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 89,
+                lineNumber: 113,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     display: "flex",
                     flexDirection: isMobile ? "column" : "row",
-                    paddingTop: "3rem",
+                    padding: "3rem",
                     alignItems: isMobile ? "center" : "flex-start"
                 },
                 children: [
@@ -20031,23 +20074,10 @@ const Portfolio = ()=>{
                             maxWidth: isMobile ? "90%" : "40%",
                             alignSelf: "center",
                             marginBottom: isMobile ? "2rem" : "0"
-                        },
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _coolClassDiagramMaskWebpDefault.default),
-                            style: {
-                                height: isMobile ? "auto" : "90%",
-                                width: "100%",
-                                objectFit: "cover"
-                            },
-                            alt: imageAltText
-                        }, void 0, false, {
-                            fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 105,
-                            columnNumber: 11
-                        }, undefined)
+                        }
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 98,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20078,12 +20108,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 136,
+                                            lineNumber: 160,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 135,
+                                        lineNumber: 159,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20091,30 +20121,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 138,
+                                        lineNumber: 162,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 125,
+                                lineNumber: 149,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 115,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 90,
+                lineNumber: 114,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 88,
+        lineNumber: 112,
         columnNumber: 5
     }, undefined);
 };
@@ -20129,9 +20159,6 @@ $RefreshReg$(_c, "Portfolio");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/cool_class_diagram_mask.webp":"3vxIw"}],"3vxIw":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("cool_class_diagram_mask.8e2bdf50.webp") + "?" + Date.now();
-
-},{}],"lW6qc":[function() {},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequiref8d6", {}, "./", "/", "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lW6qc":[function() {},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequiref8d6", {}, "./", "/", "http://localhost:1234")
 
 //# sourceMappingURL=my-portfolio-website.31b563d9.js.map
