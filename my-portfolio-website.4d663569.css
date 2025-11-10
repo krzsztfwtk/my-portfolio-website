@@ -5,7 +5,14 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Poppins, sans-serif;
+}
+
+body {
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 div#main {
@@ -118,5 +125,15 @@ a:hover {
 img.socialIcon {
   width: 30px;
   height: 30px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=my-portfolio-website.4d663569.css.map */
