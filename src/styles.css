@@ -4,18 +4,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
 html,
 body {
   font-family: "Poppins", sans-serif;
   height: 100%;
   margin: 0;
-  overflow-x: hidden;
   padding: 0;
   width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth!important;
 }
 
 div#main {
@@ -128,4 +131,13 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
