@@ -16,7 +16,7 @@ import React, { useState, useEffect } from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "url:../images/cool_3d_stuff_mask.webp";
+import image from "url:../images/plot_black_background.webp";
 
 const imageAltText = "Universal join on 3D model is a little too big :)";
 

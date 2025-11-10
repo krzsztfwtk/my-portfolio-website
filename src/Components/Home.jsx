@@ -20,10 +20,10 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "url:../images/poster_cut_mask_blured.webp";
+import image from "url:../images/plot_white_background.webp";
 console.log(image);
 
-const imageAltText = "Poster presented on conference on emerging trends in AI.";
+const imageAltText = "Trace of a point in nested rectangular epicycloids.";
 
 const Home = ({ name, title }) => {
   return (

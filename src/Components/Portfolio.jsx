@@ -19,10 +19,10 @@ import React, { useState, useEffect } from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "url:../images/cool_class_diagram_mask.webp";
+// import image from "url:../images/cool_class_diagram_mask.webp";
 
-const imageAltText =
-  "Class diagram of software to process image batches using large language model";
+// const imageAltText =
+//   "Class diagram of software to process image batches using large language model";
 
 /**
  * Project list
@@ -67,6 +67,30 @@ const projectList = [
       "Vigenère Cipher command-line tool for file encryption/decryption and breaker🔐 with frequency📊 analysis",
     url: "https://github.com/krzsztfwtk/vigenere",
   },
+  {
+    title: "LoL AI Runes Recommendation",
+    description:
+      "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams⚔️🧙‍♂️ using neural network🧠⚙️",
+    url: "https://github.com/krzsztfwtk/LoL_AI_Runes_Recommendation",
+  },
+  {
+    title: "LoL Grandmaster+ SoloQ matches 25.20 patch",
+    description:
+      "Dataset of League of legends🎮 Challenger and Grandmaster level ranked matches played on Worlds 2025🏆 patch created with Riot Games API",
+    url: "https://www.kaggle.com/datasets/krzsztfwtk/lol-grandmaster-soloq-matches-worlds-2025-patch",
+  },
+  {
+    title: "LaTeX2Formula Web",
+    description:
+      "Web app to convert LaTeX math expressions🧮 into formula code for SQL, Excel, C++, etc.✨",
+    url: "https://github.com/krzsztfwtk/LaTeX2FormulaWeb",
+  },
+  {
+    title: "Propagation Of Error Calculator",
+    description:
+      "Web-based tool that generates the propagation of error🔬 formula from a user-provided mathematical expression📐",
+    url: "https://github.com/krzsztfwtk/PropagationOfError",
+  },
 ];
 
 const Portfolio = () => {
@@ -91,7 +115,7 @@ const Portfolio = () => {
         style={{
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          paddingTop: "3rem",
+          padding: "3rem",
           alignItems: isMobile ? "center" : "flex-start",
         }}
       >
@@ -102,7 +126,7 @@ const Portfolio = () => {
             marginBottom: isMobile ? "2rem" : "0",
           }}
         >
-          <img
+          {/* <img
             src={image}
             style={{
               height: isMobile ? "auto" : "90%",
@@ -110,7 +134,7 @@ const Portfolio = () => {
               objectFit: "cover",
             }}
             alt={imageAltText}
-          />
+          /> */}
         </div>
         <div
           className="container"

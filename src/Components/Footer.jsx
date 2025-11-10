@@ -18,6 +18,7 @@ import linkedInIcon from "url:../images/socials/linkedin.svg";
 import mediumIcon from "url:../images/socials/medium.svg";
 import twitterIcon from "url:../images/socials/twitter.svg";
 import youTubeIcon from "url:../images/socials/youtube.svg";
+import kaggleIcon from "url:../images/socials/kaggle.svg";
 
 /**
  * 💡 Learning resources
@@ -38,6 +39,7 @@ const Footer = (props) => {
     primaryColor,
     twitter,
     youTube,
+    kaggle,
   } = props;
 
   return (
@@ -112,6 +114,15 @@ const Footer = (props) => {
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
+        {kaggle && (
+          <a
+            href={`https://www.kaggle.com/${kaggle}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={kaggleIcon} alt="Kaggle" className="socialIcon" />
+          </a>
+        )}
       </div>
       <p
         className="small"
@@ -138,6 +149,7 @@ Footer.propTypes = {
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
+  kaggle: PropTypes.string,
 };
 
 export default Footer;

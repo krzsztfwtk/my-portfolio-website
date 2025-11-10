@@ -33,10 +33,10 @@ const siteProps = {
   medium: "",
   twitter: "",
   youTube: "",
+  kaggle: "krzsztfwtk",
 };
 
 const primaryColor = "#003366";
-const secondaryColor = "#D2F1E4";
 
 const App = () => {
   return (
@@ -45,7 +45,7 @@ const App = () => {
       <Home name={"Krzysztof Witek"} title={siteProps.title} />
       <About />
       <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Footer {...siteProps} primaryColor={primaryColor} />
     </div>
   );
 };
