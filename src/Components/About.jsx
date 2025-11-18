@@ -18,7 +18,7 @@ import React, { useState, useEffect } from "react";
  */
 import image from "url:../images/plot_black_background.webp";
 
-const imageAltText = "Universal join on 3D model is a little too big :)";
+const imageAltText = "Trace of a point in nested rectangular epicycloids.";
 
 /**
  * Sort description that expands on your title on the Home component.
