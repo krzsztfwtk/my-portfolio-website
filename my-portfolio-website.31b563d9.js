@@ -16225,7 +16225,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  */ var _plotBlackBackgroundWebp = require("url:../images/plot_black_background.webp");
 var _plotBlackBackgroundWebpDefault = parcelHelpers.interopDefault(_plotBlackBackgroundWebp);
 var _s = $RefreshSig$();
-const imageAltText = "Universal join on 3D model is a little too big :)";
+const imageAltText = "Black background created by tracing a point in nested rectangular epicycloids.";
 /**
  * Sort description that expands on your title on the Home component.
  */ const description = "I'm a Computer Science student studying at Silesian University of Technology\uD83C\uDF93. I enjoy creating unique solutions\uD83D\uDCA1 for standard problems and standard solutions\uD83D\uDEE0\uFE0F for unique problems.";
