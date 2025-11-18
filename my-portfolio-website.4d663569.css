@@ -7,22 +7,23 @@ html, body {
   font-family: Poppins, sans-serif;
 }
 
-body {
-  overflow-x: hidden;
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth !important;
 }
 
-html {
-  scroll-behavior: smooth !important;
+::-webkit-scrollbar {
+  width: 0;
 }
 
 div#main {
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   display: flex;
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 
@@ -31,7 +32,7 @@ section.min-height {
 }
 
 section.padding {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 section img.background {
@@ -109,7 +110,7 @@ a:hover {
 .container {
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
-  margin: 20px auto;
+  margin: 15px auto;
   display: grid;
 }
 
@@ -126,15 +127,5 @@ a:hover {
 img.socialIcon {
   width: 30px;
   height: 30px;
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
 }
 /*# sourceMappingURL=my-portfolio-website.4d663569.css.map */

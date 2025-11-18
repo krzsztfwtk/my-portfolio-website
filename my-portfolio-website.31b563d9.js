@@ -94,7 +94,54 @@
 
     function localRequire(x) {
       var res = localRequire.resolve(x);
-      return res === false ? {} : newRequire(res);
+      if (res === false) {
+        return {};
+      }
+      // Synthesize a module to follow re-exports.
+      if (Array.isArray(res)) {
+        var m = {__esModule: true};
+        res.forEach(function (v) {
+          var key = v[0];
+          var id = v[1];
+          var exp = v[2] || v[0];
+          var x = newRequire(id);
+          if (key === '*') {
+            Object.keys(x).forEach(function (key) {
+              if (
+                key === 'default' ||
+                key === '__esModule' ||
+                Object.prototype.hasOwnProperty.call(m, key)
+              ) {
+                return;
+              }
+
+              Object.defineProperty(m, key, {
+                enumerable: true,
+                get: function () {
+                  return x[key];
+                },
+              });
+            });
+          } else if (exp === '*') {
+            Object.defineProperty(m, key, {
+              enumerable: true,
+              value: x,
+            });
+          } else {
+            Object.defineProperty(m, key, {
+              enumerable: true,
+              get: function () {
+                if (exp === 'default') {
+                  return x.__esModule ? x.default : x;
+                }
+                return x[exp];
+              },
+            });
+          }
+        });
+        return m;
+      }
+      return newRequire(res);
     }
 
     function resolve(x) {
@@ -16225,7 +16272,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  */ var _plotBlackBackgroundWebp = require("url:../images/plot_black_background.webp");
 var _plotBlackBackgroundWebpDefault = parcelHelpers.interopDefault(_plotBlackBackgroundWebp);
 var _s = $RefreshSig$();
-const imageAltText = "Black background created by tracing a point in nested rectangular epicycloids.";
+const imageAltText = "Trace of a point in nested rectangular epicycloids.";
 /**
  * Sort description that expands on your title on the Home component.
  */ const description = "I'm a Computer Science student studying at Silesian University of Technology\uD83C\uDF93. I enjoy creating unique solutions\uD83D\uDCA1 for standard problems and standard solutions\uD83D\uDEE0\uFE0F for unique problems.";
@@ -16277,7 +16324,7 @@ const About = ()=>{
                 style: {
                     backgroundColor: "white",
                     width: isMobile ? "90%" : "50%",
-                    padding: isMobile ? "2rem" : "4rem",
+                    padding: isMobile ? "5%" : "4rem",
                     margin: "3rem auto",
                     textAlign: "center"
                 },
@@ -19893,16 +19940,24 @@ const Home = ({ name, title })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     position: "absolute",
-                    bottom: "3rem",
-                    left: "50%"
+                    bottom: "5rem",
+                    left: "50%",
+                    transform: "translateX(-50%)"
                 },
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _downArrowSvgDefault.default),
-                    style: {
-                        height: "3rem",
-                        width: "3rem"
-                    },
-                    alt: imageAltText
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "#about",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _downArrowSvgDefault.default),
+                        style: {
+                            height: "5rem",
+                            width: "5rem"
+                        },
+                        alt: imageAltText
+                    }, void 0, false, {
+                        fileName: "src/Components/Home.jsx",
+                        lineNumber: 37,
+                        columnNumber: 26
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
                     lineNumber: 37,
@@ -19999,28 +20054,38 @@ var _s = $RefreshSig$();
         url: "https://github.com/krzsztfwtk/text-compactor-cpp"
     },
     {
+        title: "Universal Robotic Platform",
+        description: "I was a contributor in cyber-physical system project, working on an Automated Guided Vehicle\uD83D\uDE98 that was controlled via an Android mobile application\uD83D\uDCF1",
+        url: "https://github.com/PSCF-UMPANUMIW/Robot"
+    },
+    {
+        title: "Nuclear fission simulation using HTML&JavaScript canvas.",
+        description: "Interactive nuclear fission\u2622\uFE0F simulation using pure HTML and JavaScript. This is one of my first projects. I did it as extra work for a physics\u269B\uFE0F class in high school.",
+        url: "https://github.com/krzsztfwtk/nuclear-fission-simulation"
+    },
+    {
         title: "Valet Parking System Simulation",
-        description: "I was one of the main contributors in international project to develop smart valet parking\uD83D\uDE97 system that utilizes optimal space\uD83D\uDCE6.",
+        description: "I was one of the main contributors in international project to develop smart valet parking\uD83D\uDE97 system that minimizes space usage\uD83D\uDCE6.",
         url: "https://github.com/Myrtasz10/valet-parking-system-pbl"
     },
     {
         title: "TSP using OpenRouteService API",
-        description: "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances\uD83D\uDDFA\uFE0F with the OpenRouteService API",
+        description: "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances\uD83D\uDDFA\uFE0F with the OpenRouteService API.",
         url: "https://github.com/krzsztfwtk/tsp-openrouteservice"
     },
     {
         title: "Vigenere Breaker",
-        description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker\uD83D\uDD10 with frequency\uD83D\uDCCA analysis",
+        description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker\uD83D\uDD10 with frequency\uD83D\uDCCA analysis.",
         url: "https://github.com/krzsztfwtk/vigenere"
     },
     {
         title: "LoL AI Runes Recommendation",
-        description: "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams\u2694\uFE0F\uD83E\uDDD9\u200D\u2642\uFE0F using neural network\uD83E\uDDE0\u2699\uFE0F",
+        description: "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams\u2694\uFE0F\uD83E\uDDD9\u200D\u2642\uFE0F using neural network\uD83E\uDDE0\u2699\uFE0F.",
         url: "https://github.com/krzsztfwtk/LoL_AI_Runes_Recommendation"
     },
     {
         title: "LoL Grandmaster+ SoloQ matches 25.20 patch",
-        description: "Dataset of League of legends\uD83C\uDFAE Challenger and Grandmaster level ranked matches played on Worlds 2025\uD83C\uDFC6 patch created with Riot Games API",
+        description: "Dataset of League of legends\uD83C\uDFAE Challenger and Grandmaster level ranked matches played on Worlds 2025\uD83C\uDFC6 patch created with Riot Games API.",
         url: "https://www.kaggle.com/datasets/krzsztfwtk/lol-grandmaster-soloq-matches-worlds-2025-patch"
     },
     {
@@ -20030,7 +20095,7 @@ var _s = $RefreshSig$();
     },
     {
         title: "Propagation Of Error Calculator",
-        description: "Web-based tool that generates the propagation of error\uD83D\uDD2C formula from a user-provided mathematical expression\uD83D\uDCD0",
+        description: "Web-based tool that generates the propagation of error\uD83D\uDD2C formula from a user-provided mathematical expression\uD83D\uDCD0.",
         url: "https://github.com/krzsztfwtk/PropagationOfError"
     }
 ];
@@ -20058,14 +20123,14 @@ const Portfolio = ()=>{
                 children: "Projects"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 113,
+                lineNumber: 125,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     display: "flex",
                     flexDirection: isMobile ? "column" : "row",
-                    padding: "3rem",
+                    padding: isMobile ? "0" : "3rem",
                     alignItems: isMobile ? "center" : "flex-start"
                 },
                 children: [
@@ -20077,7 +20142,7 @@ const Portfolio = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 122,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20108,12 +20173,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 160,
+                                            lineNumber: 172,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 159,
+                                        lineNumber: 171,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20121,30 +20186,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 162,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 149,
+                                lineNumber: 161,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 139,
+                        lineNumber: 151,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 114,
+                lineNumber: 126,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 112,
+        lineNumber: 124,
         columnNumber: 5
     }, undefined);
 };
