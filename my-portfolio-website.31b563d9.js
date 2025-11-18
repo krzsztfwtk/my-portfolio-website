@@ -16361,7 +16361,10 @@ $RefreshReg$(_c, "About");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/plot_black_background.webp":"fEqDv"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/plot_black_background.webp":"fEqDv","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fEqDv":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("plot_black_background.3bce921d.webp") + "?" + Date.now();
+
+},{}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18669,10 +18672,7 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fEqDv":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("plot_black_background.3bce921d.webp") + "?" + Date.now();
-
-},{}],"6CuBd":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6CuBd":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$a833 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$a833.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18956,7 +18956,7 @@ $RefreshReg$(_c, "Footer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","prop-types":"GNqOQ","url:../images/socials/devdotto.svg":"2L3nD","url:../images/socials/envelope.svg":"93VzG","url:../images/socials/github.svg":"jX1li","url:../images/socials/instagram.svg":"4da6D","url:../images/socials/linkedin.svg":"cklqw","url:../images/socials/medium.svg":"lJVEq","url:../images/socials/twitter.svg":"3ZDcC","url:../images/socials/youtube.svg":"87r95","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/socials/kaggle.svg":"l7wpF"}],"GNqOQ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","prop-types":"GNqOQ","url:../images/socials/devdotto.svg":"2L3nD","url:../images/socials/envelope.svg":"93VzG","url:../images/socials/github.svg":"jX1li","url:../images/socials/instagram.svg":"4da6D","url:../images/socials/linkedin.svg":"cklqw","url:../images/socials/medium.svg":"lJVEq","url:../images/socials/twitter.svg":"3ZDcC","url:../images/socials/youtube.svg":"87r95","url:../images/socials/kaggle.svg":"l7wpF","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"GNqOQ":[function(require,module,exports,__globalThis) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
