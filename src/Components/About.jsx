@@ -70,7 +70,7 @@ const About = () => {
         style={{
           backgroundColor: "white",
           width: isMobile ? "90%" : "50%",
-          padding: isMobile ? "2rem" : "4rem",
+          padding: isMobile ? "5%" : "4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}

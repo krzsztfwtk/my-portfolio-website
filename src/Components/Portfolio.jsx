@@ -50,33 +50,45 @@ const projectList = [
     url: "https://github.com/krzsztfwtk/text-compactor-cpp",
   },
   {
+    title: "Universal Robotic Platform",
+    description:
+      "I was a contributor in cyber-physical system project, working on an Automated Guided Vehicle🚘 that was controlled via an Android mobile application📱",
+    url: "https://github.com/PSCF-UMPANUMIW/Robot",
+  },
+  {
+    title: "Nuclear fission simulation using HTML&JavaScript canvas.",
+    description:
+      "Interactive nuclear fission☢️ simulation using pure HTML and JavaScript. This is one of my first projects. I did it as extra work for a physics⚛️ class in high school.",
+    url: "https://github.com/krzsztfwtk/nuclear-fission-simulation",
+  },
+  {
     title: "Valet Parking System Simulation",
     description:
-      "I was one of the main contributors in international project to develop smart valet parking🚗 system that utilizes optimal space📦.",
+      "I was one of the main contributors in international project to develop smart valet parking🚗 system that minimizes space usage📦.",
     url: "https://github.com/Myrtasz10/valet-parking-system-pbl",
   },
   {
     title: "TSP using OpenRouteService API",
     description:
-      "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances🗺️ with the OpenRouteService API",
+      "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances🗺️ with the OpenRouteService API.",
     url: "https://github.com/krzsztfwtk/tsp-openrouteservice",
   },
   {
     title: "Vigenere Breaker",
     description:
-      "Vigenère Cipher command-line tool for file encryption/decryption and breaker🔐 with frequency📊 analysis",
+      "Vigenère Cipher command-line tool for file encryption/decryption and breaker🔐 with frequency📊 analysis.",
     url: "https://github.com/krzsztfwtk/vigenere",
   },
   {
     title: "LoL AI Runes Recommendation",
     description:
-      "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams⚔️🧙‍♂️ using neural network🧠⚙️",
+      "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams⚔️🧙‍♂️ using neural network🧠⚙️.",
     url: "https://github.com/krzsztfwtk/LoL_AI_Runes_Recommendation",
   },
   {
     title: "LoL Grandmaster+ SoloQ matches 25.20 patch",
     description:
-      "Dataset of League of legends🎮 Challenger and Grandmaster level ranked matches played on Worlds 2025🏆 patch created with Riot Games API",
+      "Dataset of League of legends🎮 Challenger and Grandmaster level ranked matches played on Worlds 2025🏆 patch created with Riot Games API.",
     url: "https://www.kaggle.com/datasets/krzsztfwtk/lol-grandmaster-soloq-matches-worlds-2025-patch",
   },
   {
@@ -88,7 +100,7 @@ const projectList = [
   {
     title: "Propagation Of Error Calculator",
     description:
-      "Web-based tool that generates the propagation of error🔬 formula from a user-provided mathematical expression📐",
+      "Web-based tool that generates the propagation of error🔬 formula from a user-provided mathematical expression📐.",
     url: "https://github.com/krzsztfwtk/PropagationOfError",
   },
 ];
@@ -115,7 +127,7 @@ const Portfolio = () => {
         style={{
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          padding: "3rem",
+          padding: isMobile ? "0" : "3rem",
           alignItems: isMobile ? "center" : "flex-start",
         }}
       >

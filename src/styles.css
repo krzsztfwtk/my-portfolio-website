@@ -13,23 +13,24 @@ body {
   width: 100%;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 html {
   scroll-behavior: smooth!important;
+  scrollbar-width: none; /* FF */
+}
+
+::-webkit-scrollbar {
+    width: 0px; /* Chrome & Edge */
 }
 
 div#main {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
 }
 
 section {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 section.min-height {
@@ -37,7 +38,7 @@ section.min-height {
 }
 
 section.padding {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 section img.background {
@@ -116,7 +117,7 @@ a:hover {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 .container .box {
@@ -132,13 +133,4 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
