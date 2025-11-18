@@ -19804,9 +19804,9 @@ const Header = ()=>{
             justifyContent: "center",
             gap: "2rem",
             background: "rgba(255,255,255,0.9)",
-            padding: "1rem",
+            padding: "1rem 5vw",
             top: 0,
-            width: "100%",
+            width: "90vw",
             zIndex: 10
         },
         children: [
