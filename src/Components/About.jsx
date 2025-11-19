@@ -1,57 +1,27 @@
-/**
- * About component
- *
- * Space for you to describe more about yourself.
- */
-
 import React, { useState, useEffect } from "react";
 
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
 import image from "url:../images/plot_black_background.webp";
-
 const imageAltText = "Trace of a point in nested rectangular epicycloids.";
 
-/**
- * Sort description that expands on your title on the Home component.
- */
 const description =
   "I'm a Computer Science student studying at Silesian University of Technology🎓. I enjoy creating unique solutions💡 for standard problems and standard solutions🛠️ for unique problems.";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
 const skillsList = [
-  "⚙️Algorithms 🔧Software Engineering",
+  "🏁Pathfinding Algorithms",
   "🗄️Relational Databases",
-  "🐧Linux 🪟Windows",
   "🌐Network Administration",
-  "🔒Cybersecurity Fundamentals",
+  "🐧Linux 🪟Windows",
   "🖥️Server Management",
-  "🛒E-commerce Operations",
+  "🛒Wordpress WooCommerce",
+  "🔒Cybersecurity Fundamentals",
   "📘Physics Fundamentals",
 ];
 
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
 const detailOrQuote = "“You don't pay for what you don't use.” - zero-overhead principle";
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  // Handle window resize to update state
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
