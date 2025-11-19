@@ -16314,17 +16314,18 @@ const About = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                         style: {
-                            textAlign: "left",
+                            textAlign: "center",
                             columns: isMobile ? 1 : 2,
                             fontSize: isMobile ? "1rem" : "1.25rem",
-                            margin: "2rem 3rem",
-                            gap: "3rem"
+                            margin: "1rem",
+                            gap: "3rem",
+                            padding: "0"
                         },
                         children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 61,
+                                lineNumber: 62,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
@@ -16334,7 +16335,7 @@ const About = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16344,7 +16345,7 @@ const About = ()=>{
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, undefined)
                 ]
