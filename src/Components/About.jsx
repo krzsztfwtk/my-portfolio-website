@@ -50,11 +50,12 @@ const About = () => {
         <hr />
         <ul
           style={{
-            textAlign: "left",
+            textAlign: "center",
             columns: isMobile ? 1 : 2,
             fontSize: isMobile ? "1rem" : "1.25rem",
-            margin: "2rem 3rem",
+            margin: "1rem",
             gap: "3rem",
+            padding: "0",
           }}
         >
           {skillsList.map((skill) => (
