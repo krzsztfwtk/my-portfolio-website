@@ -16166,7 +16166,7 @@ var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
 var _stylesCss = require("./styles.css");
 const siteProps = {
     name: "krzsztfwtk",
-    title: "Computer Science Student & Ecommerce Developer",
+    title: "Computer Science student & e-commerce developer",
     email: "",
     gitHub: "krzsztfwtk",
     instagram: "",
@@ -16242,22 +16242,66 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _plotBlackBackgroundWebp = require("url:../images/plot_black_background.webp");
-var _plotBlackBackgroundWebpDefault = parcelHelpers.interopDefault(_plotBlackBackgroundWebp);
+var _cSvg = require("url:../images/tech/c.svg");
+var _cSvgDefault = parcelHelpers.interopDefault(_cSvg);
+var _cppSvg = require("url:../images/tech/cpp.svg");
+var _cppSvgDefault = parcelHelpers.interopDefault(_cppSvg);
+var _platformioSvg = require("url:../images/tech/platformio.svg");
+var _platformioSvgDefault = parcelHelpers.interopDefault(_platformioSvg);
+var _sqlSvg = require("url:../images/tech/sql.svg");
+var _sqlSvgDefault = parcelHelpers.interopDefault(_sqlSvg);
+var _vuejsSvg = require("url:../images/tech/vuejs.svg");
+var _vuejsSvgDefault = parcelHelpers.interopDefault(_vuejsSvg);
+var _pythonSvg = require("url:../images/tech/python.svg");
+var _pythonSvgDefault = parcelHelpers.interopDefault(_pythonSvg);
+var _8NestedChebyshevEllipsesWebp = require("url:../images/8_nested_chebyshev_ellipses.webp");
+var _8NestedChebyshevEllipsesWebpDefault = parcelHelpers.interopDefault(_8NestedChebyshevEllipsesWebp);
 var _s = $RefreshSig$();
-const imageAltText = "Trace of a point in nested rectangular epicycloids.";
+const imageAltText = "Trace of a point in nested elliptical epicycloids in chebyshev metric space.";
 const description = "I'm a Computer Science student studying at Silesian University of Technology\uD83C\uDF93. I enjoy creating unique solutions\uD83D\uDCA1 for standard problems and standard solutions\uD83D\uDEE0\uFE0F for unique problems.";
 const skillsList = [
-    "\uD83C\uDFC1Pathfinding Algorithms",
-    "\uD83D\uDDC4\uFE0FRelational Databases",
-    "\uD83C\uDF10Network Administration",
-    "\uD83D\uDC27Linux \uD83E\uDE9FWindows",
-    "\uD83D\uDDA5\uFE0FServer Management",
-    "\uD83D\uDED2Wordpress WooCommerce",
-    "\uD83D\uDD12Cybersecurity Fundamentals",
-    "\uD83D\uDCD8Physics Fundamentals"
+    "\uD83C\uDFC1pathfinding algorithms",
+    "\uD83D\uDDC4\uFE0Frelational databases",
+    "\uD83D\uDC27Debian GNU/Linux",
+    "\uD83E\uDE9FMicrosoft Windows",
+    "\u26A1GPU programming (CUDA C)",
+    "\uD83C\uDF10network administration",
+    "\uD83D\uDDA5\uFE0Fserver management",
+    "\uD83D\uDED2WooCommerce Wordpress",
+    "\uD83D\uDD12cybersecurity fundamentals",
+    "\uD83D\uDCD8physics fundamentals"
 ];
-const detailOrQuote = "\u201CYou don't pay for what you don't use.\u201D - zero-overhead principle";
+const technologiesList = [
+    {
+        name: "C",
+        icon: (0, _cSvgDefault.default)
+    },
+    {
+        name: "Cpp",
+        icon: (0, _cppSvgDefault.default)
+    },
+    {
+        name: "PlatformIO",
+        icon: (0, _platformioSvgDefault.default)
+    },
+    {
+        name: "SQL",
+        icon: (0, _sqlSvgDefault.default)
+    },
+    {
+        name: "Vue.js",
+        icon: (0, _vuejsSvgDefault.default)
+    },
+    {
+        name: "Python",
+        icon: (0, _pythonSvgDefault.default)
+    }
+];
+var formula = `{(\u{1D639}, \u{1D63A}) \u{2208} \u{211D}\xb2 : (\u{1D639}, \u{1D63A}) = \u{2211}\u{1D62}\u{208C}\u{2080}\u{2077} (\u{1D639}\u{1D62}, \u{1D63A}\u{1D62}),
+\u{1D639}\u{1D62} = (\u{1D638}/\u{3C6}\u{2071})\xb7sgn(cos(\u{1D635}\xb7\u{3C6}\u{2071}))/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|) \u{22C0}
+\u{1D63A}\u{1D62} = (\u{1D629}/\u{3C6}\u{2071})\xb7sgn(sin(\u{1D635}\xb7\u{3C6}\u{2071}))\xb7(1 \u{2212} 1/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|)) \u{22C0}
+\u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337]}`;
+const quote = "\u201CYou don't pay for what you don't use.\u201D - zero-overhead principle";
 const About = ()=>{
     _s();
     const [isMobile, setIsMobile] = (0, _react.useState)(window.innerWidth <= 768);
@@ -16276,11 +16320,11 @@ const About = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
-                src: (0, _plotBlackBackgroundWebpDefault.default),
+                src: (0, _8NestedChebyshevEllipsesWebpDefault.default),
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 38,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16293,10 +16337,10 @@ const About = ()=>{
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "About Myself"
+                        children: "About myself"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 48,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16304,12 +16348,22 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 49,
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            padding: isMobile ? "1rem 1rem 0" : "1rem 3rem 0"
+                        },
+                        children: quote
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 50,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -16325,39 +16379,109 @@ const About = ()=>{
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 62,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 51,
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "flex",
+                            flexWrap: "wrap",
+                            justifyContent: "center",
+                            gap: "2rem",
+                            marginTop: "2rem"
+                        },
+                        children: technologiesList.map((tech)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: tech.icon,
+                                alt: tech.name,
+                                style: {
+                                    height: "3rem",
+                                    width: "3rem"
+                                }
+                            }, tech.name, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 91,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 89,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 65,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         style: {
                             padding: isMobile ? "1rem 1rem 0" : "1rem 3rem 0"
                         },
-                        children: detailOrQuote
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "\uD83C\uDFA8Background image:"
+                            }, void 0, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 96,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    margin: "1.5rem 0"
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 97,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.95rem",
+                                    lineHeight: "1.8",
+                                    whiteSpace: "pre-wrap"
+                                },
+                                children: formula
+                            }, void 0, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 98,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    margin: "1.5rem 0"
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 99,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Rendered using NVIDIA CUDA\uD83D\uDE0A"
+                            }, void 0, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 100,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 66,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 39,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 37,
+        lineNumber: 60,
         columnNumber: 5
     }, undefined);
 };
@@ -16372,10 +16496,7 @@ $RefreshReg$(_c, "About");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/plot_black_background.webp":"fEqDv","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fEqDv":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("plot_black_background.3bce921d.webp") + "?" + Date.now();
-
-},{}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/8_nested_chebyshev_ellipses.webp":"6xoZW","url:../images/tech/c.svg":"4HKM6","url:../images/tech/cpp.svg":"7bDWq","url:../images/tech/platformio.svg":"gbC3L","url:../images/tech/vuejs.svg":"hS1AB","url:../images/tech/python.svg":"1g4GQ","url:../images/tech/sql.svg":"lD7AY"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18683,7 +18804,28 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6CuBd":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6xoZW":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("8_nested_chebyshev_ellipses.4fbd68b4.webp") + "?" + Date.now();
+
+},{}],"4HKM6":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("c.5f759ce8.svg") + "?" + Date.now();
+
+},{}],"7bDWq":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("cpp.7a1456d2.svg") + "?" + Date.now();
+
+},{}],"gbC3L":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("platformio.5cc8990c.svg") + "?" + Date.now();
+
+},{}],"hS1AB":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("vuejs.5c48edec.svg") + "?" + Date.now();
+
+},{}],"1g4GQ":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("python.932bd2e4.svg") + "?" + Date.now();
+
+},{}],"lD7AY":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("sql.d60f1576.svg") + "?" + Date.now();
+
+},{}],"6CuBd":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$a833 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$a833.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -19822,9 +19964,9 @@ var _downArrowSvg = require("url:../images/down-arrow.svg");
 var _downArrowSvgDefault = parcelHelpers.interopDefault(_downArrowSvg);
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _plotWhiteBackgroundWebp = require("url:../images/plot_white_background.webp");
-var _plotWhiteBackgroundWebpDefault = parcelHelpers.interopDefault(_plotWhiteBackgroundWebp);
-console.log((0, _plotWhiteBackgroundWebpDefault.default));
+var _3NestedRectanglesWebp = require("url:../images/3_nested_rectangles.webp");
+var _3NestedRectanglesWebpDefault = parcelHelpers.interopDefault(_3NestedRectanglesWebp);
+console.log((0, _3NestedRectanglesWebpDefault.default));
 const imageAltText = "Trace of a point in nested rectangular epicycloids.";
 const Home = ({ name, title })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -19833,8 +19975,8 @@ const Home = ({ name, title })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
-                src: (0, _plotWhiteBackgroundWebpDefault.default),
-                alt: ""
+                src: (0, _3NestedRectanglesWebpDefault.default),
+                alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
                 lineNumber: 13,
@@ -19882,8 +20024,7 @@ const Home = ({ name, title })=>{
                         style: {
                             height: "5rem",
                             width: "5rem"
-                        },
-                        alt: imageAltText
+                        }
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
                         lineNumber: 19,
@@ -19924,11 +20065,11 @@ $RefreshReg$(_c, "Home");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/down-arrow.svg":"ce6oJ","prop-types":"GNqOQ","url:../images/plot_white_background.webp":"4JJxi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ce6oJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/down-arrow.svg":"ce6oJ","prop-types":"GNqOQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/3_nested_rectangles.webp":"jAMeO"}],"ce6oJ":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("down-arrow.685cdc2e.svg") + "?" + Date.now();
 
-},{}],"4JJxi":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("plot_white_background.813273ab.webp") + "?" + Date.now();
+},{}],"jAMeO":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("3_nested_rectangles.a46da80c.webp") + "?" + Date.now();
 
 },{}],"28kHR":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e4b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -19946,47 +20087,47 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
 const projectList = [
     {
-        title: "Reports of digital circuit theory exercises",
-        description: "Sample reports\uD83D\uDCDC of digital circuit theory\uD83D\uDD22 laboratory exercises in the engineering studies of Computer Science.",
-        url: "https://github.com/krzsztfwtk/polsl-sprawozdania-tuc"
-    },
-    {
-        title: "Reports of physics experiments",
-        description: "Sample reports\uD83D\uDCDC of physics experiments\uD83D\uDD2C, performed in physics laboratories in the engineering studies of Computer Science.",
-        url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka"
-    },
-    {
-        title: "NLP Toolkit",
+        title: "NLP toolkit",
         description: "Tools for text summarization and semantic search\uD83D\uDD0D. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25\uD83D\uDCAC. These tailored algorithms process massive datasets in real-time using basic mathematics.",
         url: "https://github.com/krzsztfwtk/text-compactor-cpp"
     },
     {
-        title: "Universal Robotic Platform",
-        description: "I was a contributor in cyber-physical system project, working on an Automated Guided Vehicle\uD83D\uDE98 that was controlled via an Android mobile application\uD83D\uDCF1",
+        title: "Universal robotic platform",
+        description: "I was a contributor in cyber-physical system project, working on an Automated Guided Vehicle\uD83D\uDE98 that was controlled via an Android mobile application\uD83D\uDCF1.",
         url: "https://github.com/PSCF-UMPANUMIW/Robot"
     },
     {
-        title: "Nuclear fission simulation using HTML&JavaScript canvas.",
+        title: "Reports of digital circuit theory exercises",
+        description: "Sample reports\uD83D\uDCDC of digital circuit theory\uD83D\uDD22 laboratory exercises in the engineering studies of Computer Science.",
+        url: "https://polsl-sprawozdania-tuc.krzsztf.com/"
+    },
+    {
+        title: "Reports of physics experiments",
+        description: "Sample reports\uD83D\uDCDC of physics experiments\uD83D\uDD2C, performed in physics laboratories in the engineering studies of Computer Science.",
+        url: "https://polsl-sprawozdania-fizyka.krzsztf.com/"
+    },
+    {
+        title: "Nuclear fission simulation",
         description: "Interactive nuclear fission\u2622\uFE0F simulation using pure HTML and JavaScript. This is one of my first projects. I did it as extra work for a physics\u269B\uFE0F class in high school.",
         url: "https://github.com/krzsztfwtk/nuclear-fission-simulation"
     },
     {
-        title: "Valet Parking System Simulation",
+        title: "Valet parking system simulation",
         description: "I was one of the main contributors in international project to develop smart valet parking\uD83D\uDE97 system that minimizes space usage\uD83D\uDCE6.",
         url: "https://github.com/Myrtasz10/valet-parking-system-pbl"
     },
     {
-        title: "TSP using OpenRouteService API",
-        description: "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances\uD83D\uDDFA\uFE0F with the OpenRouteService API.",
+        title: "TSP using openrouteservice API",
+        description: "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances\uD83D\uDDFA\uFE0F with the openrouteservice API.",
         url: "https://github.com/krzsztfwtk/tsp-openrouteservice"
     },
     {
-        title: "Vigenere Breaker",
-        description: "Vigen\xe8re Cipher command-line tool for file encryption/decryption and breaker\uD83D\uDD10 with frequency\uD83D\uDCCA analysis.",
+        title: "Vigenere breaker",
+        description: "Vigen\xe8re cipher command-line tool for file encryption/decryption and breaker\uD83D\uDD10 with frequency\uD83D\uDCCA analysis.",
         url: "https://github.com/krzsztfwtk/vigenere"
     },
     {
-        title: "LoL AI Runes Recommendation",
+        title: "LoL AI runes recommendation",
         description: "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams\u2694\uFE0F\uD83E\uDDD9\u200D\u2642\uFE0F using neural network\uD83E\uDDE0\u2699\uFE0F.",
         url: "https://github.com/krzsztfwtk/LoL_AI_Runes_Recommendation"
     },
@@ -19996,14 +20137,14 @@ const projectList = [
         url: "https://www.kaggle.com/datasets/krzsztfwtk/lol-grandmaster-soloq-matches-worlds-2025-patch"
     },
     {
-        title: "LaTeX2Formula Web",
+        title: "LaTeX2Formula",
         description: "Web app to convert LaTeX math expressions\uD83E\uDDEE into formula code for SQL, Excel, C++, etc.\u2728",
-        url: "https://github.com/krzsztfwtk/LaTeX2FormulaWeb"
+        url: "https://latex2formula.krzsztf.com/"
     },
     {
-        title: "Propagation Of Error Calculator",
+        title: "Propagation of error calculator",
         description: "Web-based tool that generates the propagation of error\uD83D\uDD2C formula from a user-provided mathematical expression\uD83D\uDCD0.",
-        url: "https://github.com/krzsztfwtk/PropagationOfError"
+        url: "https://poe.krzsztf.com/"
     }
 ];
 const Portfolio = ()=>{
@@ -20062,42 +20203,36 @@ const Portfolio = ()=>{
                         },
                         children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "box",
-                                style: {
-                                    padding: "1rem",
-                                    border: "1px solid #ccc",
-                                    borderRadius: "8px",
-                                    textAlign: "center"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: project.url,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: project.url,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             style: {
                                                 flexBasis: "40px"
                                             },
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 133,
+                                            lineNumber: 127,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "small",
+                                            children: project.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Portfolio.jsx",
+                                            lineNumber: 128,
                                             columnNumber: 17
                                         }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 132,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "small",
-                                        children: project.description
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 135,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, project.title, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/Portfolio.jsx",
+                                    lineNumber: 126,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, project.title, false, {
                                 fileName: "src/Components/Portfolio.jsx",
                                 lineNumber: 122,
                                 columnNumber: 13

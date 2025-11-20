@@ -104,7 +104,7 @@ a {
 }
 
 a:hover {
-  color: #4e567e;
+  color: #038;
 }
 
 .container {
@@ -114,14 +114,15 @@ a:hover {
   display: grid;
 }
 
-.container .box {
+.box {
   text-align: center;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px 16px;
-  display: flex;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.box:hover {
+  border: 1px solid #038;
 }
 
 img.socialIcon {
