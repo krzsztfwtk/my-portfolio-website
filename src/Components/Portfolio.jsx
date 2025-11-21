@@ -2,55 +2,55 @@ import React, { useState, useEffect } from "react";
 
 const projectList = [
   {
-    title: "Reports of digital circuit theory exercises",
-    description:
-      "Sample reports📜 of digital circuit theory🔢 laboratory exercises in the engineering studies of Computer Science.",
-    url: "https://github.com/krzsztfwtk/polsl-sprawozdania-tuc",
-  },
-  {
-    title: "Reports of physics experiments",
-    description:
-      "Sample reports📜 of physics experiments🔬, performed in physics laboratories in the engineering studies of Computer Science.",
-    url: "https://github.com/krzsztfwtk/polsl-sprawozdania-fizyka",
-  },
-  {
-    title: "NLP Toolkit",
+    title: "NLP toolkit",
     description:
       "Tools for text summarization and semantic search🔍. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25💬. These tailored algorithms process massive datasets in real-time using basic mathematics.",
     url: "https://github.com/krzsztfwtk/text-compactor-cpp",
   },
   {
-    title: "Universal Robotic Platform",
+    title: "Universal robotic platform",
     description:
-      "I was a contributor in cyber-physical system project, working on an Automated Guided Vehicle🚘 that was controlled via an Android mobile application📱",
+      "I was a contributor in cyber-physical system project, working on an Automated Guided Vehicle🚘 that was controlled via an Android mobile application📱.",
     url: "https://github.com/PSCF-UMPANUMIW/Robot",
   },
   {
-    title: "Nuclear fission simulation using HTML&JavaScript canvas.",
+    title: "Reports of digital circuit theory exercises",
+    description:
+      "Sample reports📜 of digital circuit theory🔢 laboratory exercises in the engineering studies of Computer Science.",
+    url: "https://polsl-sprawozdania-tuc.krzsztf.com/",
+  },
+  {
+    title: "Reports of physics experiments",
+    description:
+      "Sample reports📜 of physics experiments🔬, performed in physics laboratories in the engineering studies of Computer Science.",
+    url: "https://polsl-sprawozdania-fizyka.krzsztf.com/",
+  },
+  {
+    title: "Nuclear fission simulation",
     description:
       "Interactive nuclear fission☢️ simulation using pure HTML and JavaScript. This is one of my first projects. I did it as extra work for a physics⚛️ class in high school.",
     url: "https://github.com/krzsztfwtk/nuclear-fission-simulation",
   },
   {
-    title: "Valet Parking System Simulation",
+    title: "Valet parking system simulation",
     description:
       "I was one of the main contributors in international project to develop smart valet parking🚗 system that minimizes space usage📦.",
     url: "https://github.com/Myrtasz10/valet-parking-system-pbl",
   },
   {
-    title: "TSP using OpenRouteService API",
+    title: "TSP using openrouteservice API",
     description:
-      "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances🗺️ with the OpenRouteService API.",
+      "Solving the Traveling Salesman Problem (TSP) for vehicle routes using real road distances🗺️ with the openrouteservice API.",
     url: "https://github.com/krzsztfwtk/tsp-openrouteservice",
   },
   {
-    title: "Vigenere Breaker",
+    title: "Vigenere breaker",
     description:
-      "Vigenère Cipher command-line tool for file encryption/decryption and breaker🔐 with frequency📊 analysis.",
+      "Vigenère cipher command-line tool for file encryption/decryption and breaker🔐 with frequency📊 analysis.",
     url: "https://github.com/krzsztfwtk/vigenere",
   },
   {
-    title: "LoL AI Runes Recommendation",
+    title: "LoL AI runes recommendation",
     description:
       "Web-based tool that recommends loadout for League of Legends champions based on the draft composition of both teams⚔️🧙‍♂️ using neural network🧠⚙️.",
     url: "https://github.com/krzsztfwtk/LoL_AI_Runes_Recommendation",
@@ -62,16 +62,16 @@ const projectList = [
     url: "https://www.kaggle.com/datasets/krzsztfwtk/lol-grandmaster-soloq-matches-worlds-2025-patch",
   },
   {
-    title: "LaTeX2Formula Web",
+    title: "LaTeX2Formula",
     description:
       "Web app to convert LaTeX math expressions🧮 into formula code for SQL, Excel, C++, etc.✨",
-    url: "https://github.com/krzsztfwtk/LaTeX2FormulaWeb",
+    url: "https://latex2formula.krzsztf.com/",
   },
   {
-    title: "Propagation Of Error Calculator",
+    title: "Propagation of error calculator",
     description:
       "Web-based tool that generates the propagation of error🔬 formula from a user-provided mathematical expression📐.",
-    url: "https://github.com/krzsztfwtk/PropagationOfError",
+    url: "https://poe.krzsztf.com/",
   },
 ];
 
@@ -122,17 +122,11 @@ const Portfolio = () => {
             <div
               className="box"
               key={project.title}
-              style={{
-                padding: "1rem",
-                border: "1px solid #ccc",
-                borderRadius: "8px",
-                textAlign: "center",
-              }}
             >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <p className="small">{project.description}</p>
               </a>
-              <p className="small">{project.description}</p>
             </div>
           ))}
         </div>
