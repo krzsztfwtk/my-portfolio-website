@@ -16300,7 +16300,7 @@ const technologiesList = [
 var formula = `{(\u{1D639}, \u{1D63A}) \u{2208} \u{211D}\xb2 : (\u{1D639}, \u{1D63A}) = \u{2211}\u{1D62}\u{208C}\u{2080}\u{2077} (\u{1D639}\u{1D62}, \u{1D63A}\u{1D62}),
 \u{1D639}\u{1D62} = (\u{1D638}/\u{3C6}\u{2071})\xb7sgn(cos(\u{1D635}\xb7\u{3C6}\u{2071}))/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|) \u{22C0}
 \u{1D63A}\u{1D62} = (\u{1D629}/\u{3C6}\u{2071})\xb7sgn(sin(\u{1D635}\xb7\u{3C6}\u{2071}))\xb7(1 \u{2212} 1/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|)) \u{22C0}
-\u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337]}`;
+\u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337] \u{2229} \u{211D}}`;
 const quote = "\u201CYou don't pay for what you don't use.\u201D - zero-overhead principle";
 const About = ()=>{
     _s();
@@ -16392,7 +16392,7 @@ const About = ()=>{
                             display: "flex",
                             flexWrap: "wrap",
                             justifyContent: "center",
-                            gap: "2rem",
+                            gap: "1.2rem",
                             marginTop: "2rem"
                         },
                         children: technologiesList.map((tech)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -16496,7 +16496,28 @@ $RefreshReg$(_c, "About");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/8_nested_chebyshev_ellipses.webp":"6xoZW","url:../images/tech/c.svg":"4HKM6","url:../images/tech/cpp.svg":"7bDWq","url:../images/tech/platformio.svg":"gbC3L","url:../images/tech/vuejs.svg":"hS1AB","url:../images/tech/python.svg":"1g4GQ","url:../images/tech/sql.svg":"lD7AY"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/tech/c.svg":"4HKM6","url:../images/tech/cpp.svg":"7bDWq","url:../images/tech/platformio.svg":"gbC3L","url:../images/tech/sql.svg":"lD7AY","url:../images/tech/vuejs.svg":"hS1AB","url:../images/tech/python.svg":"1g4GQ","url:../images/8_nested_chebyshev_ellipses.webp":"6xoZW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4HKM6":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("c.5f759ce8.svg") + "?" + Date.now();
+
+},{}],"7bDWq":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("cpp.7a1456d2.svg") + "?" + Date.now();
+
+},{}],"gbC3L":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("platformio.5cc8990c.svg") + "?" + Date.now();
+
+},{}],"lD7AY":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("sql.d60f1576.svg") + "?" + Date.now();
+
+},{}],"hS1AB":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("vuejs.5c48edec.svg") + "?" + Date.now();
+
+},{}],"1g4GQ":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("python.932bd2e4.svg") + "?" + Date.now();
+
+},{}],"6xoZW":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("8_nested_chebyshev_ellipses.4fbd68b4.webp") + "?" + Date.now();
+
+},{}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18804,28 +18825,7 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6xoZW":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("8_nested_chebyshev_ellipses.4fbd68b4.webp") + "?" + Date.now();
-
-},{}],"4HKM6":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("c.5f759ce8.svg") + "?" + Date.now();
-
-},{}],"7bDWq":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("cpp.7a1456d2.svg") + "?" + Date.now();
-
-},{}],"gbC3L":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("platformio.5cc8990c.svg") + "?" + Date.now();
-
-},{}],"hS1AB":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("vuejs.5c48edec.svg") + "?" + Date.now();
-
-},{}],"1g4GQ":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("python.932bd2e4.svg") + "?" + Date.now();
-
-},{}],"lD7AY":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("sql.d60f1576.svg") + "?" + Date.now();
-
-},{}],"6CuBd":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6CuBd":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$a833 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$a833.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -20065,7 +20065,7 @@ $RefreshReg$(_c, "Home");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/down-arrow.svg":"ce6oJ","prop-types":"GNqOQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../images/3_nested_rectangles.webp":"jAMeO"}],"ce6oJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../images/down-arrow.svg":"ce6oJ","prop-types":"GNqOQ","url:../images/3_nested_rectangles.webp":"jAMeO","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ce6oJ":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("down-arrow.685cdc2e.svg") + "?" + Date.now();
 
 },{}],"jAMeO":[function(require,module,exports,__globalThis) {
