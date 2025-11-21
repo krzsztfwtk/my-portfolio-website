@@ -16297,10 +16297,7 @@ const technologiesList = [
         icon: (0, _pythonSvgDefault.default)
     }
 ];
-var formula = `{(\u{1D639}, \u{1D63A}) \u{2208} \u{211D}\xb2 : (\u{1D639}, \u{1D63A}) = \u{2211}\u{1D62}\u{208C}\u{2080}\u{2077} (\u{1D639}\u{1D62}, \u{1D63A}\u{1D62}),
-\u{1D639}\u{1D62} = (\u{1D638}/\u{3C6}\u{2071})\xb7sgn(cos(\u{1D635}\xb7\u{3C6}\u{2071}))/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|) \u{22C0}
-\u{1D63A}\u{1D62} = (\u{1D629}/\u{3C6}\u{2071})\xb7sgn(sin(\u{1D635}\xb7\u{3C6}\u{2071}))\xb7(1 \u{2212} 1/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|)) \u{22C0}
-\u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337] \u{2229} \u{211D}}`;
+var formula = `{(\u{1D639}, \u{1D63A}) \u{2208} \u{211D}\xb2 : (\u{1D639}, \u{1D63A}) = \u{2211}\u{1D62}\u{208C}\u{2080}\u{2077} ((\u{1D638}/\u{3C6}\u{2071})\xb7sgn(cos(\u{1D635}\xb7\u{3C6}\u{2071}))/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|), (\u{1D629}/\u{3C6}\u{2071})\xb7sgn(sin(\u{1D635}\xb7\u{3C6}\u{2071}))\xb7(1 \u{2212} 1/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|))) \u{22C0} \u{22C0}\u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337] \u{2229} \u{211D}}`;
 const quote = "\u201CYou don't pay for what you don't use.\u201D - zero-overhead principle";
 const About = ()=>{
     _s();
@@ -16324,7 +16321,7 @@ const About = ()=>{
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 61,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16340,7 +16337,7 @@ const About = ()=>{
                         children: "About myself"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 71,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16348,7 +16345,7 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 72,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16358,12 +16355,12 @@ const About = ()=>{
                         children: quote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 73,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 74,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -16379,12 +16376,12 @@ const About = ()=>{
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 86,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 75,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16392,29 +16389,29 @@ const About = ()=>{
                             display: "flex",
                             flexWrap: "wrap",
                             justifyContent: "center",
-                            gap: "1.2rem",
+                            gap: "1.4rem",
                             marginTop: "2rem"
                         },
                         children: technologiesList.map((tech)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                 src: tech.icon,
                                 alt: tech.name,
                                 style: {
-                                    height: "3rem",
-                                    width: "3rem"
+                                    height: isMobile ? "2.4rem" : "3rem",
+                                    width: isMobile ? "2.4rem" : "3rem"
                                 }
                             }, tech.name, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 91,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 89,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 94,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16426,7 +16423,7 @@ const About = ()=>{
                                 children: "\uD83C\uDFA8Background image:"
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 96,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16435,7 +16432,7 @@ const About = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 97,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16447,7 +16444,7 @@ const About = ()=>{
                                 children: formula
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 98,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16456,32 +16453,32 @@ const About = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 99,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Rendered using NVIDIA CUDA\uD83D\uDE0A"
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 100,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 95,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 62,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 60,
+        lineNumber: 57,
         columnNumber: 5
     }, undefined);
 };
