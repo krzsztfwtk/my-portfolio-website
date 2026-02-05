@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 
 const projectList = [
   {
+    title: "Puzzle-based storage library",
+    description:
+      "An open-source puzzle-based storage pathfinding library for smart parking systems incorporating A* and Dijkstra’s algorithms. Introduced in an article published in Applied Sciences.",
+    url: "https://github.com/krzsztfwtk/puzzle-based-storage-library",
+  },
+  {
     title: "NLP toolkit",
     description:
       "Tools for text summarization and semantic search🔍. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25💬. These tailored algorithms process massive datasets in real-time using basic mathematics.",
@@ -72,6 +78,12 @@ const projectList = [
     description:
       "Web-based tool that generates the propagation of error🔬 formula from a user-provided mathematical expression📐.",
     url: "https://poe.krzsztf.com/",
+  },
+  {
+    title: "Smart contract with an alternative voting system",
+    description:
+      "A voting system🗳️ as a smart contract on the Ethereum network using Solidity⛓️. The weight of each vote varies depending on the characteristics of the Ethereum address.",
+    url: "https://github.com/krzsztfwtk/polsl-bkiza-proj",
   },
 ];
 
