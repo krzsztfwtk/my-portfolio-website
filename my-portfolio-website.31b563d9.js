@@ -16166,7 +16166,7 @@ var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
 var _stylesCss = require("./styles.css");
 const siteProps = {
     name: "krzsztfwtk",
-    title: "Computer Science student & e-commerce developer",
+    title: "B.Eng. in Computer Science",
     email: "",
     gitHub: "krzsztfwtk",
     instagram: "",
@@ -16297,7 +16297,7 @@ const technologiesList = [
         icon: (0, _pythonSvgDefault.default)
     }
 ];
-var formula = `{(\u{1D639}, \u{1D63A}) \u{2208} \u{211D}\xb2 : (\u{1D639}, \u{1D63A}) = \u{2211}\u{1D62}\u{208C}\u{2080}\u{2077} ((\u{1D638}/\u{3C6}\u{2071})\xb7sgn(cos(\u{1D635}\xb7\u{3C6}\u{2071}))/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|), (\u{1D629}/\u{3C6}\u{2071})\xb7sgn(sin(\u{1D635}\xb7\u{3C6}\u{2071}))\xb7(1 \u{2212} 1/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|))) \u{22C0} \u{22C0}\u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337] \u{2229} \u{211D}}`;
+var formula = `{(\u{1D639}, \u{1D63A}) \u{2208} \u{211D}\xb2 : (\u{1D639}, \u{1D63A}) = \u{2211}\u{1D62}\u{208C}\u{2080}\u{2077} ((\u{1D638}/\u{3C6}\u{2071})\xb7sgn(cos(\u{1D635}\xb7\u{3C6}\u{2071}))/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|), (\u{1D629}/\u{3C6}\u{2071})\xb7sgn(sin(\u{1D635}\xb7\u{3C6}\u{2071}))\xb7(1 \u{2212} 1/(1 + |tan(\u{1D635}\xb7\u{3C6}\u{2071})|))) \u{22C0} \u{3C6} = (\u{221A}5 + 1)/2 \u{22C0} \u{1D638} = 16 \u{22C0} \u{1D629} = 9 \u{22C0} \u{1D635} \u{2208} [0, 1337] \u{2229} \u{211D}}`;
 const quote = "\u201CYou don't pay for what you don't use.\u201D - zero-overhead principle";
 const About = ()=>{
     _s();
@@ -20084,6 +20084,11 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
 const projectList = [
     {
+        title: "Puzzle-based storage library",
+        description: "An open-source puzzle-based storage pathfinding library for smart parking systems incorporating A* and Dijkstra\u2019s algorithms. Introduced in an article published in Applied Sciences.",
+        url: "https://github.com/krzsztfwtk/puzzle-based-storage-library"
+    },
+    {
         title: "NLP toolkit",
         description: "Tools for text summarization and semantic search\uD83D\uDD0D. Lightweight C++ code. Simple (unlogged) TF-IDF, TF-IDF, BM25\uD83D\uDCAC. These tailored algorithms process massive datasets in real-time using basic mathematics.",
         url: "https://github.com/krzsztfwtk/text-compactor-cpp"
@@ -20142,6 +20147,11 @@ const projectList = [
         title: "Propagation of error calculator",
         description: "Web-based tool that generates the propagation of error\uD83D\uDD2C formula from a user-provided mathematical expression\uD83D\uDCD0.",
         url: "https://poe.krzsztf.com/"
+    },
+    {
+        title: "Smart contract with an alternative voting system",
+        description: "A voting system\uD83D\uDDF3\uFE0F as a smart contract on the Ethereum network using Solidity\u26D3\uFE0F. The weight of each vote varies depending on the characteristics of the Ethereum address.",
+        url: "https://github.com/krzsztfwtk/polsl-bkiza-proj"
     }
 ];
 const Portfolio = ()=>{
@@ -20168,7 +20178,7 @@ const Portfolio = ()=>{
                 children: "Projects"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 95,
+                lineNumber: 107,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20187,7 +20197,7 @@ const Portfolio = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 104,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20212,7 +20222,7 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 127,
+                                            lineNumber: 139,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20220,35 +20230,35 @@ const Portfolio = ()=>{
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 128,
+                                            lineNumber: 140,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 126,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, undefined)
                             }, project.title, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 122,
+                                lineNumber: 134,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 112,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 96,
+                lineNumber: 108,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 94,
+        lineNumber: 106,
         columnNumber: 5
     }, undefined);
 };
