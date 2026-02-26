@@ -19053,7 +19053,7 @@ const Footer = (props)=>{
                 children: [
                     "Created by ",
                     name,
-                    ". 2025. This website does not use cookies :)"
+                    ". 2026. This website does not use cookies :)"
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
