@@ -112,7 +112,7 @@ const Footer = (props) => {
         className="small"
         style={{ marginTop: 0, color: "white", textAlign: "center", padding: "0rem 1rem" }}
       >
-        Created by {name}. 2025. This website does not use cookies :)
+        Created by {name}. 2026. This website does not use cookies :)
       </p>
     </div>
   );
